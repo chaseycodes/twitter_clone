@@ -1,0 +1,14 @@
+<p>Account</p>
+    <div>
+        <form action="/private/account" method="post">
+            <p>TWEET</p>
+            <input name="tweet" type="text" autofocus required>
+            <input type="submit" value="SUBMIT">
+        </form>
+        <ul>
+            {% for x in posts %}
+            {{ x }}
+            {% endfor %}
+        </ul>
+    <p><a href="/private/dashboard">Global Dashboard</a></p>
+    </div>
